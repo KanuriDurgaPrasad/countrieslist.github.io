@@ -35,7 +35,7 @@ function displayCountriesList() {
     for (let country of countriesList) {
         let countryName = country.name;
 
-        if (countryName.includes(searchval)) {
+        if (countryName.toLowerCase().includes(searchval.toLowerCase())) {
             createAndAppendCountry(country);
         }
     }
